@@ -1,0 +1,32 @@
+/* ShopPage.css */
+.filters-section {
+	background-color: #f8f9fa;
+	padding: 15px;
+}
+
+.filters-section .form-control {
+	margin-bottom: 15px;
+}
+
+.product-image {
+	max-height: 200px;
+	object-fit: cover;
+}
+
+.placeholder-card {
+	background-color: #e9ecef;
+	color: #6c757d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.placeholder-card .card-img-top {
+	background-color: #dee2e6;
+	height: 180px;
+}
+
+.placeholder-card .btn {
+	margin-top: 10px;
+}

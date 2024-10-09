@@ -1,0 +1,16 @@
+/* Navbar.css */
+.navbar-brand {
+	font-size: 1.5rem;
+}
+
+.nav-link {
+	color: #fff !important;
+}
+
+.nav-link:hover {
+	color: #ddd !important;
+}
+
+.bi-cart {
+	font-size: 1.25rem;
+}
