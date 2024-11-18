@@ -39,43 +39,50 @@ const CheckoutPage: React.FC = () => {
 	const roundedTotalPrice = totalPrice.toFixed(2);
 
 	return (
-		<Container>
+		<Container className='checkout-container'>
 			<h1>Checkout</h1>
-			<Table striped bordered hover>
-				<thead>
-					<tr>
-						<th>Product</th>
-						<th>Quantity</th>
-						<th>Price</th>
-						<th>Total</th>
-						<th>Actions</th>
-					</tr>
-				</thead>
-				<tbody>
-					{cartItems.map((item: any) => (
-						<tr key={item.product_id}>
-							<td>{item.product_name}</td>
-							<td>
-								<Form.Control
-									type="number"
-									value={item.quantity}
-									onChange={(e) => handleQuantityChange(item.product_id, parseInt(e.target.value))}
-									min={1}
-								/>
-							</td>
-							<td>${item.product_price.toFixed(2)}</td>
-							<td>${(item.product_price * item.quantity).toFixed(2)}</td>
-							<td>
-								<Button variant="danger" onClick={() => handleRemoveItem(item.product_id)}>
-									Remove
-								</Button>
-							</td>
-						</tr>
-					))}
-				</tbody>
-			</Table>
-			<h3>Total: ${roundedTotalPrice}</h3>
-			<Button variant="success" onClick={handleCheckout}>Proceed to Payment</Button>
+
+			{cartItems.length > 0 ? (
+				<>
+					<Table striped bordered hover>
+						<thead>
+							<tr>
+								<th>Product</th>
+								<th>Quantity</th>
+								<th>Price</th>
+								<th>Total</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							{cartItems.map((item: any) => (
+								<tr key={item.product_id}>
+									<td>{item.product_name}</td>
+									<td>
+										<Form.Control
+											type="number"
+											value={item.quantity}
+											onChange={(e) => handleQuantityChange(item.product_id, parseInt(e.target.value))}
+											min={1}
+										/>
+									</td>
+									<td>R{item.product_price.toFixed(2)}</td>
+									<td>R{(item.product_price * item.quantity).toFixed(2)}</td>
+									<td>
+										<Button variant="danger" onClick={() => handleRemoveItem(item.product_id)}>
+											Remove
+										</Button>
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</Table>
+					<h3>Total: R{roundedTotalPrice}</h3>
+					<Button variant="success" onClick={handleCheckout}>Proceed to Payment</Button>
+				</>
+			) : (
+				<h3>Your cart is empty</h3>
+			)}
 
 			{/* Confirmation Modal */}
 			<Modal show={showConfirmation} onHide={handleCloseConfirmation}>
@@ -84,7 +91,7 @@ const CheckoutPage: React.FC = () => {
 				</Modal.Header>
 				<Modal.Body>
 					<p>Are you sure you want to proceed with the purchase? This action cannot be undone.</p>
-					<p>Total Amount: ${roundedTotalPrice}</p>
+					<p>Total Amount: R{roundedTotalPrice}</p>
 				</Modal.Body>
 				<Modal.Footer>
 					<Button variant="secondary" onClick={handleCloseConfirmation}>

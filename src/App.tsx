@@ -7,7 +7,6 @@ import AboutUsPage from './pages/AboutUsPage';
 import ShopPage from './pages/ShopPage';
 import CheckoutPage from './pages/CheckoutPage';
 import ContactPage from './pages/ContactPage';
-import AdminPage from './pages/AdminPage';
 import './styling/App.css'
 
 const App: React.FC = () => {
@@ -21,7 +20,6 @@ const App: React.FC = () => {
 				<Route path="/shop" element={<ShopPage />} />
 				<Route path="/checkout" element={<CheckoutPage />} />
 				<Route path="/contact" element={<ContactPage />} />
-				<Route path="/admin" element={<AdminPage />} />
 			</Routes>
 			<Footer />
 		</Router>

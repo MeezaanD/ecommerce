@@ -93,7 +93,7 @@ const ShopPage: React.FC = () => {
 						) : (
 							filteredProducts.map((product) => (
 								<Col md={6} lg={4} key={product.product_id}>
-									<Card className="mb-4">
+									<Card className="mb-4 shadow">
 										<Card.Img variant="top" src={product.product_image} />
 										<Card.Body>
 											<Card.Title>{product.product_name}</Card.Title>

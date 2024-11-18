@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../styling/Footer.css'; // Import CSS for styling
