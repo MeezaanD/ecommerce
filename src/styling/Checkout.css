@@ -1,33 +1,48 @@
 .checkout-container {
 	padding-top: 50px;
 	padding-bottom: 50px;
-  }
+}
 
-  .checkout-container h1 {
+.checkout-container h1 {
 	font-size: 3rem;
 	font-weight: bold;
 	margin-bottom: 20px;
-  }
-  
-  .table thead th {
+}
+
+.table thead th {
 	background-color: #f8f9fa;
-  }
-  
-  .table tbody tr:hover {
+}
+
+.table tbody tr:hover {
 	background-color: #f1f1f1;
-  }
-  
-  .total-price {
+}
+
+.total-price {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin-right: 10px;
-  }
-  
-  .confirmation-modal .modal-body {
+}
+
+.confirmation-modal .modal-body {
 	font-size: 1rem;
-  }
-  
-  .confirmation-modal .modal-footer .btn {
+}
+
+.confirmation-modal .modal-footer .btn {
 	padding: 10px 20px;
 	font-size: 1rem;
-  }
+}
+
+@media (max-width: 992px) {
+	.card-title {
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+
+	.card-text {
+		font-size: 1rem;
+	}
+
+	.card .btn {
+		font-size: 1rem;
+	}
+}

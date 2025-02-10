@@ -11,20 +11,20 @@ import NotFoundPage from './pages/NotFoundPage'; // Import the NotFoundPage
 import './styling/App.css'
 
 const App: React.FC = () => {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/shop" element={<ShopPage />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<NotFoundPage />} /> {/* Add this line */}
-      </Routes>
-      <Footer />
-    </Router>
-  );
+	return (
+		<Router>
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<LandingPage />} />
+				<Route path="/about" element={<AboutUsPage />} />
+				<Route path="/shop" element={<ShopPage />} />
+				<Route path="/checkout" element={<CheckoutPage />} />
+				<Route path="/contact" element={<ContactPage />} />
+				<Route path="*" element={<NotFoundPage />} /> {/* Add this line */}
+			</Routes>
+			<Footer />
+		</Router>
+	);
 };
 
 export default App;
