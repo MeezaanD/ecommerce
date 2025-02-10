@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../styling/Footer.css'; // Import CSS for styling
 
 const Footer: React.FC = () => {
@@ -13,12 +14,12 @@ const Footer: React.FC = () => {
 					</Col>
 					<Col md={4}>
 						<h5>Quick Links</h5>
-						<ul className="footer-links">
-							<li><a href="/">Home</a></li>
-							<li><a href="/shop">Shop</a></li>
-							<li><a href="/about">About Us</a></li>
-							<li><a href="/contact">Contact</a></li>
-						</ul>
+						<Nav className="mx-auto">
+						<Nav.Link as={Link} to="/">Home</Nav.Link>
+						<Nav.Link as={Link} to="/about">About</Nav.Link>
+						<Nav.Link as={Link} to="/shop">Shop</Nav.Link>
+						<Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+					</Nav>
 					</Col>
 					<Col md={4}>
 						<h5>Contact Us</h5>
