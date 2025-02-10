@@ -4,7 +4,7 @@
 		"product_name": "Space Adventure",
 		"product_description": "Explore the galaxy with this thrilling sci-fi novel.",
 		"quantity": 15,
-		"product_image": "path/to/space-adventure.jpg",
+		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
 		"product_price": 120.00,
 		"genre": "Sci-Fi"
 	},
@@ -13,7 +13,7 @@
 		"product_name": "Cooking 101",
 		"product_description": "A beginner's guide to mastering the art of cooking.",
 		"quantity": 20,
-		"product_image": "path/to/cooking-101.jpg",
+		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
 		"product_price": 80.00,
 		"genre": "Cooking"
 	},
@@ -22,7 +22,7 @@
 		"product_name": "Galactic Odyssey",
 		"product_description": "An epic journey through space and time.",
 		"quantity": 8,
-		"product_image": "path/to/galactic-odyssey.jpg",
+		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
 		"product_price": 150.00,
 		"genre": "Sci-Fi"
 	},
@@ -31,7 +31,7 @@
 		"product_name": "Advanced Cooking Techniques",
 		"product_description": "Elevate your cooking skills with advanced techniques and recipes.",
 		"quantity": 12,
-		"product_image": "path/to/advanced-cooking.jpg",
+		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
 		"product_price": 90.00,
 		"genre": "Cooking"
 	},
@@ -40,7 +40,7 @@
 		"product_name": "Mystery of the Stars",
 		"product_description": "Uncover the mysteries hidden among the stars.",
 		"quantity": 5,
-		"product_image": "path/to/mystery-of-the-stars.jpg",
+		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
 		"product_price": 110.00,
 		"genre": "Sci-Fi"
 	},
@@ -49,7 +49,7 @@
 		"product_name": "Quick Meals for Busy People",
 		"product_description": "Delicious and easy recipes for those on the go.",
 		"quantity": 18,
-		"product_image": "path/to/quick-meals.jpg",
+		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
 		"product_price": 70.00,
 		"genre": "Cooking"
 	}

@@ -1,0 +1,39 @@
+.contact-page {
+    background-color: #f8f9fa;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .contact-page h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-page h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-page .lead {
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+  }
+  
+  .contact-page .form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact-page .btn-primary {
+    font-size: 1.25rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+  
+  .contact-page ul {
+    font-size: 1.25rem;
+    color: #6c757d;
+  }

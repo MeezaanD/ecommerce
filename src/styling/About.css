@@ -1,0 +1,43 @@
+.about-page {
+    background-color: #f8f9fa;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .about-page h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-page .lead {
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+  }
+  
+  .about-page .card {
+    min-height: 150px ;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-page .card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-page .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .about-page .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .about-page .btn-primary {
+    font-size: 1.25rem;
+    padding: 10px 30px;
+  }

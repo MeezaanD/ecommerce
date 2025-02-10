@@ -4,8 +4,8 @@ import '../styling/Footer.css'; // Import CSS for styling
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="footer bg-danger">
-			<Container>
+		<footer className="footer bg-dark">
+			<Container className='bg-dark text-light'>
 				<Row>
 					<Col md={4}>
 						<h5>About Us</h5>

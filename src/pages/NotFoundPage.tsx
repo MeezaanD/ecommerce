@@ -11,8 +11,8 @@ const NotFoundPage: React.FC = () => {
   };
 
   return (
-    <Container className="not-found-page text-center">
-      <Row className="align-items-center justify-content-center min-vh-100">
+    <Container className="not-found-page text-center min-vh-100">
+      <Row className="align-items-center justify-content-center">
         <Col md={6}>
           <h1 className="display-1 text-primary">404</h1>
           <p className="lead">Oops! The page you are looking for does not exist.</p>

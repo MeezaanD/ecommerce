@@ -1,16 +1,33 @@
-.table thead th {
-	background-color: #f8f9fa;
-}
+.checkout-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+  }
 
-.table tbody tr:hover {
-	background-color: #f1f1f1;
-}
-
-.total-price {
-	font-size: 1.25rem;
+  .checkout-container h1 {
+	font-size: 3rem;
 	font-weight: bold;
-}
-
-.confirmation-modal .modal-body {
+	margin-bottom: 20px;
+  }
+  
+  .table thead th {
+	background-color: #f8f9fa;
+  }
+  
+  .table tbody tr:hover {
+	background-color: #f1f1f1;
+  }
+  
+  .total-price {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-right: 10px;
+  }
+  
+  .confirmation-modal .modal-body {
 	font-size: 1rem;
-}
+  }
+  
+  .confirmation-modal .modal-footer .btn {
+	padding: 10px 20px;
+	font-size: 1rem;
+  }

@@ -1,0 +1,36 @@
+.featured-products {
+	padding: 2rem 1rem;
+}
+
+.featured-products h2 {
+	margin-bottom: 2rem;
+}
+
+.product-card {
+	position: relative;
+	min-height: 300px;
+	/* Adjust height as needed */
+	overflow: hidden;
+}
+
+.product-card img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.product-card-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	/* Overlay color and opacity */
+	color: white;
+	padding: 1rem;
+	text-align: center;
+}
+
+.product-card-title {
+	margin: 0;
+}
