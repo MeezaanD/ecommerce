@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 				<BootstrapNavbar.Brand as={Link} to="/">MyStore</BootstrapNavbar.Brand>
 				<BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
 				<BootstrapNavbar.Collapse id="basic-navbar-nav">
-					<Nav className="me-auto">
+					<Nav className="mx-auto">
 						<Nav.Link as={Link} to="/">Home</Nav.Link>
 						<Nav.Link as={Link} to="/about">About</Nav.Link>
 						<Nav.Link as={Link} to="/shop">Shop</Nav.Link>
