@@ -70,15 +70,14 @@ const ShopPage: React.FC = () => {
           </Form.Group>
           <Form.Group controlId="genre" className="mb-4">
             <Form.Label>Genre</Form.Label>
-            <Form.Control
-              as="select"
+            <Form.Select
               value={selectedGenre}
               onChange={handleGenreChange}>
               <option>All</option>
               <option>Sci-Fi</option>
               <option>Cooking</option>
               {/* Add more genres as needed */}
-            </Form.Control>
+            </Form.Select>
           </Form.Group>
         </Col>
         <Col lg={9}>
