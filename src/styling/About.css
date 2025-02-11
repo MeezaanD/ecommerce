@@ -11,11 +11,13 @@
 
 .about-page .lead {
 	font-size: 1.25rem;
+	font-weight: 500;
 	margin-bottom: 50px;
 }
 
 .about-page .card {
-	min-height: 150px;
+	font-weight: 500;
+	min-height: 350px;
 	border-radius: 10px;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -23,6 +25,16 @@
 .about-page .card-hover:hover {
 	transform: translateY(-10px);
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .card-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.about-page .card-text {
+	font-size: 1.3rem;
+	font-weight: 500;
 }
 
 .about-page .display-card {
@@ -47,26 +59,38 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 }
 
 .about-page .display-card-story {
-	min-height: 250px;
+	min-height: 350px;
 	background-image: url('../assets/bmw.jpg');
 }
 
 .about-page .display-card-team {
-	min-height: 250px;
+	min-height: 350px;
 	background-image: url('../assets/mercedes.jpg');
 }
 
 .about-page .display-card-vision {
-	min-height: 250px;
+	min-height: 350px;
 	background-image: url('../assets/porsche.jpg');
 }
 
 .about-page .btn-primary {
 	font-size: 1.25rem;
 	padding: 10px 30px;
+}
+
+/* Fade-in effect */
+.reveal {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+	opacity: 1;
+	transform: translateY(0);
 }

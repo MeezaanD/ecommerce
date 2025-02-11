@@ -60,7 +60,7 @@ const ShopPage: React.FC = () => {
 		<Container className='shop-page'>
 			<h1 className="text-center mb-5">Shop</h1>
 			<Row>
-				<Col lg={3} className="filters-section mb-5">
+				<Col lg={3} className="filters-section mb-4">
 					<h3 className="mb-4">Filters</h3>
 					<Form.Group controlId="search" className="mb-4">
 						<Form.Label>Search</Form.Label>
@@ -106,10 +106,10 @@ const ShopPage: React.FC = () => {
 							filteredProducts.map((product) => (
 								<Col md={6} lg={4} key={product.product_id} className="mb-4">
 									<Card className="shadow-sm product-card">
-										<Card.Img variant="top" src={product.product_image} className="product-image" />
+										<Card.Img variant="top" src={product.product_image} className="product-image img-fluid" />
 										<Card.Body>
 											<Card.Title>{product.product_name}</Card.Title>
-											<Card.Text>R{product.product_price.toFixed(2)}</Card.Text>
+											<Card.Text>${product.product_price.toFixed(2)}</Card.Text>
 											<Button variant="primary" onClick={() => handleViewDetails(product)}>
 												View Details
 											</Button>
