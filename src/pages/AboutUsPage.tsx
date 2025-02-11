@@ -11,28 +11,21 @@ const AboutUsPage: React.FC = () => {
 					<Row className="my-3">
 						<Col md={8}>
 							<Card className="mb-4 shadow-sm card-hover h-100">
-								<Card.Body className="d-flex justify-content-center align-items-center display-card">
-									Our Story
-								</Card.Body>
+								<Card.Body className="d-flex justify-content-center align-items-center display-card display-card-story"></Card.Body>
 							</Card>
 						</Col>
 						<Col md={4}>
 							<Card className="mb-4 shadow-sm card-hover">
-								<Card.Body className="d-flex justify-content-center align-items-center display-card">
-									Our Team
-								</Card.Body>
+								<Card.Body className="d-flex justify-content-center align-items-center display-card display-card-team"></Card.Body>
 							</Card>
 							<Card className="mt-2 shadow-sm card-hover">
-								<Card.Body className="d-flex justify-content-center align-items-center display-card">
-									Our Vision
-								</Card.Body>
+								<Card.Body className="d-flex justify-content-center align-items-center display-card display-card-vision"></Card.Body>
 							</Card>
 						</Col>
 					</Row>
 					<p className="lead">
-						We are a leading provider of audiobooks across various genres including cooking, sci-fi, and more.
-						Our mission is to bring high-quality audiobooks to everyone, making it easy and affordable to
-						enjoy your favorite books on the go.
+						Welcome to CarStore, your ultimate destination for luxury cars. We specialize exclusively in top brands like BMW, Porsche, and Mercedes-Benz.
+						Our mission is to provide high-quality vehicles that combine performance, comfort, and cutting-edge technology.
 					</p>
 				</Col>
 			</Row>
@@ -42,7 +35,7 @@ const AboutUsPage: React.FC = () => {
 						<Card.Body>
 							<Card.Title>Our Mission</Card.Title>
 							<Card.Text>
-								We strive to provide an extensive collection of audiobooks that cater to all tastes and preferences.
+								We strive to offer an exclusive collection of luxury cars that cater to all your needs and preferences.
 							</Card.Text>
 						</Card.Body>
 					</Card>
@@ -52,7 +45,7 @@ const AboutUsPage: React.FC = () => {
 						<Card.Body>
 							<Card.Title>Why Choose Us?</Card.Title>
 							<Card.Text>
-								With a wide range of audiobooks and an easy purchasing process, we make it simple for you to dive into your next favorite story.
+								With a curated selection of BMW, Porsche, and Mercedes-Benz cars, we make it easy for you to find your next dream car.
 							</Card.Text>
 						</Card.Body>
 					</Card>
@@ -62,7 +55,7 @@ const AboutUsPage: React.FC = () => {
 						<Card.Body>
 							<Card.Title>How Our Store Works</Card.Title>
 							<Card.Text>
-								Browse our collection, add audiobooks to your cart, and checkout with a secure payment system. Enjoy your new audiobook instantly!
+								Browse our collection, add your favorite cars to your cart, and checkout with a secure payment system. Drive off with your new car in no time!
 							</Card.Text>
 						</Card.Body>
 					</Card>

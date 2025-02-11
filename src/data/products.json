@@ -1,56 +1,92 @@
 [
-	{
-		"product_id": "1",
-		"product_name": "Space Adventure",
-		"product_description": "Explore the galaxy with this thrilling sci-fi novel.",
-		"quantity": 15,
-		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
-		"product_price": 120.00,
-		"genre": "Sci-Fi"
-	},
-	{
-		"product_id": "2",
-		"product_name": "Cooking 101",
-		"product_description": "A beginner's guide to mastering the art of cooking.",
-		"quantity": 20,
-		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
-		"product_price": 80.00,
-		"genre": "Cooking"
-	},
-	{
-		"product_id": "3",
-		"product_name": "Galactic Odyssey",
-		"product_description": "An epic journey through space and time.",
-		"quantity": 8,
-		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
-		"product_price": 150.00,
-		"genre": "Sci-Fi"
-	},
-	{
-		"product_id": "4",
-		"product_name": "Advanced Cooking Techniques",
-		"product_description": "Elevate your cooking skills with advanced techniques and recipes.",
-		"quantity": 12,
-		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
-		"product_price": 90.00,
-		"genre": "Cooking"
-	},
-	{
-		"product_id": "5",
-		"product_name": "Mystery of the Stars",
-		"product_description": "Uncover the mysteries hidden among the stars.",
-		"quantity": 5,
-		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
-		"product_price": 110.00,
-		"genre": "Sci-Fi"
-	},
-	{
-		"product_id": "6",
-		"product_name": "Quick Meals for Busy People",
-		"product_description": "Delicious and easy recipes for those on the go.",
-		"quantity": 18,
-		"product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
-		"product_price": 70.00,
-		"genre": "Cooking"
-	}
+    {
+        "product_id": "1",
+        "product_name": "BMW 3 Series",
+        "product_description": "A compact executive car with dynamic performance and innovative technology.",
+        "quantity": 15,
+        "product_image": "https://i.postimg.cc/QChtb53K/3-series.png",
+        "product_price": 45000.00,
+        "category": "Sedan",
+        "brand": "BMW"
+    },
+    {
+        "product_id": "2",
+        "product_name": "BMW M5",
+        "product_description": "A high-performance sedan with a powerful engine and luxurious features.",
+        "quantity": 20,
+        "product_image": "https://i.postimg.cc/J470Hbx9/m5.jpg",
+        "product_price": 102000.00,
+        "category": "Sedan",
+        "brand": "BMW"
+    },
+    {
+        "product_id": "3",
+        "product_name": "BMW X5",
+        "product_description": "A versatile SUV with ample space, advanced technology, and superior performance.",
+        "quantity": 8,
+        "product_image": "https://i.postimg.cc/rFYVd7Kr/x5.jpg",
+        "product_price": 60000.00,
+        "category": "SUV",
+        "brand": "BMW"
+    },
+    {
+        "product_id": "4",
+        "product_name": "Mercedes-Benz E-Class Saloon",
+        "product_description": "A luxury sedan that combines elegance, comfort, and cutting-edge technology.",
+        "quantity": 12,
+        "product_image": "https://i.postimg.cc/m2RyFHfM/mercedes-benz-e-class-saloon-w213-696x392-12-2022.png",
+        "product_price": 55000.00,
+        "category": "Sedan",
+        "brand": "Mercedes-Benz"
+    },
+    {
+        "product_id": "5",
+        "product_name": "Mercedes-Benz S-Class",
+        "product_description": "A flagship luxury sedan known for its opulent interior and advanced features.",
+        "quantity": 5,
+        "product_image": "https://i.postimg.cc/QMRpNBJF/mercedes-benz-s-class-wv223-modeloverview-696x392-09-2022.png",
+        "product_price": 110000.00,
+        "category": "Sedan",
+        "brand": "Mercedes-Benz"
+    },
+    {
+        "product_id": "6",
+        "product_name": "Mercedes-Benz GLC SUV",
+        "product_description": "A stylish and versatile SUV with advanced safety features and a comfortable ride.",
+        "quantity": 18,
+        "product_image": "https://i.postimg.cc/DZTRJz2z/mercedes-benz-glc-suv-x254-modeloverview-696x392-05-2022.png",
+        "product_price": 50000.00,
+        "category": "SUV",
+        "brand": "Mercedes-Benz"
+    },
+    {
+        "product_id": "7",
+        "product_name": "Porsche Cayenne 718",
+        "product_description": "A luxury SUV with powerful performance and advanced technology.",
+        "quantity": 10,
+        "product_image": "https://i.postimg.cc/m24X4ycb/Cayenne-removebg-preview.png",
+        "product_price": 80000.00,
+        "category": "SUV",
+        "brand": "Porsche"
+    },
+    {
+        "product_id": "8",
+        "product_name": "Porsche GT3 RS",
+        "product_description": "A high-performance sports car with track-focused features and a powerful engine.",
+        "quantity": 5,
+        "product_image": "https://i.postimg.cc/hvL2xfYW/GTRS-removebg-preview.png",
+        "product_price": 160000.00,
+        "category": "Sports Car",
+        "brand": "Porsche"
+    },
+    {
+        "product_id": "9",
+        "product_name": "Porsche Cayenne SUV",
+        "product_description": "A luxury SUV with a blend of performance, comfort, and advanced features.",
+        "quantity": 8,
+        "product_image": "https://i.postimg.cc/9XZ8snQ8/SUV-removebg-preview.png",
+        "product_price": 85000.00,
+        "category": "SUV",
+        "brand": "Porsche"
+    }
 ]

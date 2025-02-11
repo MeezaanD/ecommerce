@@ -6,25 +6,25 @@ const reviews = [
 	{
 		id: 1,
 		name: 'John Doe',
-		review: 'Amazing products! Highly recommend this store. The audiobooks are top-notch.',
+		review: 'Amazing cars! Highly recommend this dealership. The models are top-notch.',
 		rating: 5,
 	},
 	{
 		id: 2,
 		name: 'Jane Smith',
-		review: 'Great customer service and a fantastic selection of audiobooks.',
+		review: 'Great customer service and a fantastic selection of cars.',
 		rating: 4,
 	},
 	{
 		id: 3,
 		name: 'Sam Wilson',
-		review: 'I love the variety of genres available. The checkout process was smooth and easy.',
+		review: 'I love the variety of car brands available. The purchase process was smooth and easy.',
 		rating: 5,
 	},
 	{
 		id: 4,
 		name: 'Emily Johnson',
-		review: 'The audiobooks are of great quality and the prices are reasonable. Will shop again!',
+		review: 'The cars are of great quality and the prices are reasonable. Will buy again!',
 		rating: 4,
 	},
 ];

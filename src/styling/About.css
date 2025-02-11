@@ -29,13 +29,41 @@
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #fff;
-	background-color: #6c757d;
 	border-radius: 10px;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.about-page .display-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+.about-page .display-card-story {
+	min-height: 250px;
+	background-image: url('../assets/bmw.jpg');
+}
+
+.about-page .display-card-team {
+	min-height: 250px;
+	background-image: url('../assets/mercedes.jpg');
+}
+
+.about-page .display-card-vision {
+	min-height: 250px;
+	background-image: url('../assets/porsche.jpg');
 }
 
 .about-page .btn-primary {

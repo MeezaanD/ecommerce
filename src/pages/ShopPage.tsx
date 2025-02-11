@@ -12,7 +12,8 @@ const ShopPage: React.FC = () => {
 	const [showModal, setShowModal] = useState(false);
 	const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 	const [searchTerm, setSearchTerm] = useState<string>('');
-	const [selectedGenre, setSelectedGenre] = useState<string>('All');
+	const [selectedCategory, setSelectedCategory] = useState<string>('All');
+	const [selectedBrand, setSelectedBrand] = useState<string>('All');
 	const { addToCart } = useCart();
 
 	useEffect(() => {
@@ -22,11 +23,12 @@ const ShopPage: React.FC = () => {
 	useEffect(() => {
 		const filtered = products.filter(product => {
 			const matchesSearch = product.product_name.toLowerCase().includes(searchTerm.toLowerCase());
-			const matchesGenre = selectedGenre === 'All' || product.genre === selectedGenre;
-			return matchesSearch && matchesGenre;
+			const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
+			const matchesBrand = selectedBrand === 'All' || product.brand === selectedBrand;
+			return matchesSearch && matchesCategory && matchesBrand;
 		});
 		setFilteredProducts(filtered);
-	}, [searchTerm, selectedGenre, products]);
+	}, [searchTerm, selectedCategory, selectedBrand, products]);
 
 	const handleViewDetails = (product: Product) => {
 		setSelectedProduct(product);
@@ -46,12 +48,13 @@ const ShopPage: React.FC = () => {
 		setSearchTerm(e.target.value);
 	};
 
-	const handleGenreChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-		setSelectedGenre(e.target.value);
+	const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+		setSelectedCategory(e.target.value);
 	};
 
-	// Fill with placeholders if less than 12 products
-	const placeholders = Array.from({ length: 12 - filteredProducts.length }, (_, i) => i);
+	const handleBrandChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+		setSelectedBrand(e.target.value);
+	};
 
 	return (
 		<Container className='shop-page'>
@@ -68,15 +71,28 @@ const ShopPage: React.FC = () => {
 							onChange={handleSearchChange}
 						/>
 					</Form.Group>
-					<Form.Group controlId="genre" className="mb-4">
-						<Form.Label>Genre</Form.Label>
+					<Form.Group controlId="category" className="mb-4">
+						<Form.Label>Category</Form.Label>
 						<Form.Select
-							value={selectedGenre}
-							onChange={handleGenreChange}>
+							value={selectedCategory}
+							onChange={handleCategoryChange}>
 							<option>All</option>
-							<option>Sci-Fi</option>
-							<option>Cooking</option>
-							{/* Add more genres as needed */}
+							<option>Sedan</option>
+							<option>SUV</option>
+							<option>Sports Car</option>
+							{/* Add more categories as needed */}
+						</Form.Select>
+					</Form.Group>
+					<Form.Group controlId="brand" className="mb-4">
+						<Form.Label>Brand</Form.Label>
+						<Form.Select
+							value={selectedBrand}
+							onChange={handleBrandChange}>
+							<option>All</option>
+							<option>BMW</option>
+							<option>Mercedes-Benz</option>
+							<option>Porsche</option>
+							{/* Add more brands as needed */}
 						</Form.Select>
 					</Form.Group>
 				</Col>
@@ -93,7 +109,7 @@ const ShopPage: React.FC = () => {
 										<Card.Img variant="top" src={product.product_image} className="product-image" />
 										<Card.Body>
 											<Card.Title>{product.product_name}</Card.Title>
-											<Card.Text>R{product.product_price}</Card.Text>
+											<Card.Text>R{product.product_price.toFixed(2)}</Card.Text>
 											<Button variant="primary" onClick={() => handleViewDetails(product)}>
 												View Details
 											</Button>
@@ -102,20 +118,6 @@ const ShopPage: React.FC = () => {
 								</Col>
 							))
 						)}
-						{placeholders.map((_, index) => (
-							<Col md={6} lg={4} key={`placeholder-${index}`} className="mb-4">
-								<Card className="shadow-sm placeholder-card">
-									<Card.Img variant="top" src="placeholder-image-url" className="product-image" />
-									<Card.Body>
-										<Card.Title>Loading...</Card.Title>
-										<Card.Text>R00.00</Card.Text>
-										<Button variant="secondary" disabled>
-											View Details
-										</Button>
-									</Card.Body>
-								</Card>
-							</Col>
-						))}
 					</Row>
 				</Col>
 			</Row>

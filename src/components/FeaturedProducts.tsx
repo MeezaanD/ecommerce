@@ -8,9 +8,11 @@ const FeaturedProducts = () => {
 	const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
 
 	useEffect(() => {
-		// Get the last 4 products from productsData
-		const lastFourProducts = productsData.slice(-4);
-		setFeaturedProducts(lastFourProducts);
+		// Display products with product_id 1, 4, and 9
+		const selectedProducts = productsData.filter(product => 
+			product.product_id === "1" || product.product_id === "4" || product.product_id === "8"
+		);
+		setFeaturedProducts(selectedProducts);
 	}, []);
 
 	return (
@@ -21,7 +23,7 @@ const FeaturedProducts = () => {
 			</div>
 			<Row>
 				{featuredProducts.map((product) => (
-					<Col md={6} lg={3} key={product.product_id}>
+					<Col md={6} lg={4} key={product.product_id}>
 						<Card className="product-card mb-4">
 							<Card.ImgOverlay className="product-card-overlay">
 								<Card.Title className="product-card-title mt-3 text-start">{product.product_name}</Card.Title>
