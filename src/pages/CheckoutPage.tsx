@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Button, Table, Form, Modal, Row, Col, Card } from 'react-bootstrap';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../hooks/useCart';
 import { useNavigate } from 'react-router-dom';
+import { CartItem } from '../types/CartItem';
 import '../styling/Checkout.css';
 
 const CheckoutPage: React.FC = () => {
@@ -10,7 +11,7 @@ const CheckoutPage: React.FC = () => {
 	const [showConfirmation, setShowConfirmation] = useState(false);
 
 	useEffect(() => {
-		const total = cartItems.reduce((sum: number, item: any) => sum + item.product_price * item.quantity, 0);
+		const total = cartItems.reduce((sum: number, item: CartItem) => sum + item.product_price * item.quantity, 0);
 		setTotalPrice(total);
 	}, [cartItems]);
 
@@ -63,7 +64,7 @@ const CheckoutPage: React.FC = () => {
 								</tr>
 							</thead>
 							<tbody>
-								{cartItems.map((item: any) => (
+								{cartItems.map((item: CartItem) => (
 									<tr key={item.product_id}>
 										<td>{item.product_name}</td>
 										<td>
@@ -88,7 +89,7 @@ const CheckoutPage: React.FC = () => {
 					</div>
 
 					<div className="d-lg-none">
-						{cartItems.map((item: any) => (
+						{cartItems.map((item: CartItem) => (
 							<Card key={item.product_id} className="mb-3">
 								<Card.Body>
 									<Row className="align-items-center">

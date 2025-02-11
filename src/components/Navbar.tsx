@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar as BootstrapNavbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../hooks/useCart';
 import '../styling/Navbar.css'
 
 const Navbar: React.FC = () => {

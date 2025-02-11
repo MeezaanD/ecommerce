@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../hooks/useCart';
 import { Product } from '../types/Product';
 import productsData from '../data/products.json';
 import ProductModal from '../components/ProductModal';
