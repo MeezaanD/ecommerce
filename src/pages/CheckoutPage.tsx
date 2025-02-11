@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Button, Table, Form, Modal, Row, Col, Card } from 'react-bootstrap';
 import { useCart } from '../context/CartContext';
+import { useNavigate } from 'react-router-dom';
 import '../styling/Checkout.css';
 
 const CheckoutPage: React.FC = () => {
@@ -33,6 +34,12 @@ const CheckoutPage: React.FC = () => {
 
 	const handleCloseConfirmation = () => {
 		setShowConfirmation(false);
+	};
+
+	const navigate = useNavigate();
+
+	const handleGoShop = () => {
+		navigate('/shop');
 	};
 
 	// Round totalPrice to 2 decimal places
@@ -115,7 +122,10 @@ const CheckoutPage: React.FC = () => {
 					</div>
 				</>
 			) : (
-				<h3 className="text-center">Your cart is empty</h3>
+				<div className='text-center'>
+					<h3 className="text-center my-5">Your cart is empty</h3>
+					<Button variant="primary" onClick={handleGoShop}>Go to Shop</Button>
+				</div>
 			)}
 
 			<Modal show={showConfirmation} onHide={handleCloseConfirmation} className="confirmation-modal">

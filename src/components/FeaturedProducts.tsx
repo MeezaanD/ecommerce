@@ -19,7 +19,7 @@ const FeaturedProducts = () => {
 		<Container className="featured-products">
 			<div className='d-flex align-items-center justify-content-between'>
 				<h2>Featured Products</h2>
-				<Button variant="primary" href={"/shop"}>View All</Button>
+				<Button className='px-3 py-2' variant="primary" href={"/shop"}>View All</Button>
 			</div>
 			<Row>
 				{featuredProducts.map((product) => (

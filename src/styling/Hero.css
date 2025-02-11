@@ -25,3 +25,8 @@
 	font-size: 1.25rem;
 	padding: 10px 30px;
 }
+
+.hero-section .btn {
+	padding: 10px 30px;
+	border-radius: 50px;
+}

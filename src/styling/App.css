@@ -26,3 +26,7 @@
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #555;
 }
+
+.btn {
+	border-radius: 50px !important;
+}

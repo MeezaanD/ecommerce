@@ -109,7 +109,7 @@ const ShopPage: React.FC = () => {
 										<Card.Img variant="top" src={product.product_image} className="product-image img-fluid" />
 										<Card.Body>
 											<Card.Title>{product.product_name}</Card.Title>
-											<Card.Text>${product.product_price.toFixed(2)}</Card.Text>
+											<Card.Text>R{product.product_price.toFixed(2)}</Card.Text>
 											<Button variant="primary" onClick={() => handleViewDetails(product)}>
 												View Details
 											</Button>
